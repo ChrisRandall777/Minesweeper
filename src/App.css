@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body{
+    background-color: darkblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#topPanel{
+    display: flex;
+    height: 10vh;
+    font-size: 2vh;
+    background-color: grey;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#btnsContainer{
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.topBtn{
+    background-color: lightblue;
+    font-size: 4vh;
+    border-color: darkblue;
+    border-style:dashed;
 }
 
-.App-link {
-  color: #61dafb;
+#gameBoardContainer{
+    text-align: center;
+    padding-top: 7vh;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#gameBoard{
+    --numCol: 10;
+    --numRow: 10;
+    display: inline-grid;
+    grid-template-columns: repeat(var(--numCol), calc(70vh / var(--numCol)));
+    grid-template-rows: repeat(var(--numRow), calc(70vh / var(--numRow)));
+    gap: 2px;
+    border-width: 2px;
+    padding: 2px;
+    background-color: lightgreen;
+    text-align: center;
+    
 }
+
+.square{
+    padding-top: 25%;
+}
+
+.hidden{
+    background-color: rgb(255, 98, 0);
+    text-indent: -9999px;
+}
+
+.flagged{
+    background-color: red;
+}
+
+.found{
+    background-color: lightcoral;
+}
+
+#settingsComponent{
+    display: none;
+}
+
+#settingsContainer{
+    position: absolute;
+    background-color: lightblue;
+    width: 200px;
+    padding: 5px;
+    right: 0px;
+    top: 10vh;
+}
+
+/* #rickRollVid{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+} */
