@@ -80,3 +80,9 @@ h1 {
     bottom: 0px;
 }
 
+@media (max-width: 400px){
+    #gameBoard{
+        grid-template-columns: repeat(var(--numCol), calc(80vw / var(--numCol)));
+        grid-template-rows: repeat(var(--numRow), calc(80vw / var(--numRow)));
+    }
+}
