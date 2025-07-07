@@ -2,18 +2,24 @@ body{
     background-color: darkblue;
 }
 
+h1 {
+    margin: 0
+}
+
 #topPanel{
     display: flex;
-    height: 10vh;
+    padding: 10px;
     font-size: 2vh;
     background-color: grey;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
 }
 
 #btnsContainer{
     display: flex;
-    width: 20vw;
+    column-gap: 20px;
     justify-content: space-between;
 }
 
@@ -26,7 +32,7 @@ body{
 
 #gameBoardContainer{
     text-align: center;
-    padding-top: 7vh;
+    margin-top: 20px;
     font-weight: bold;
 }
 
@@ -71,14 +77,6 @@ body{
     width: 200px;
     padding: 5px;
     right: 0px;
-    top: 10vh;
+    bottom: 0px;
 }
 
-/* #rickRollVid{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-} */

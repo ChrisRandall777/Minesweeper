@@ -74,8 +74,8 @@ function Game(){
     return (
         <>
         <div id="topPanel">
-            <h1 id="sizeText">Size: {height} x {width}</h1>
             <h1 id="topMsg">Minesweeper!</h1>
+            <h1 id="sizeText">Size: {height} x {width}</h1>
             <h1 id="minesText">Mines: {numMines}</h1>
             <div id="btnsContainer">
                 <button className="topBtn" id="restartButton" onClick={() => startGame(numMines)}>Restart</button>
